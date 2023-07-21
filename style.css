@@ -1,0 +1,121 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Popins', Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text color */
+}
+
+header {
+    background-color: #10fa10; /* Green header background */
+    color: #1d1515; /* White text color for the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #14161400; /* Darker green navigation background */
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff; /* White text color for navigation links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+nav a:hover {
+    color: #2ab42a; /* Light green text color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #008000; /* Green heading color */
+}
+
+footer {
+    background-color: #006400; /* Darker green footer background */
+    color: #ffffff; /* White text color for the footer */
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px; /* Adjust the size of the logo as needed */
+}
+
+.association-name {
+    margin-left: 10px;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Fix the navigation bar to the right side */
+nav {
+    margin-left: auto;
+}
+
+/* Image Slider CSS */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-height: 300px; /* Adjust the height of the slider as needed */
+}
+
+.slider img {
+    width: 100%;
+    max-height: 300px; /* Adjust the height of the slider as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slider img:first-child {
+    opacity: 1;
+}
+
+/* Slide animation */
+@keyframes slide {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.slider img:nth-child(1) {
+    animation: slide 9s infinite;
+}
+
+.slider img:nth-child(2) {
+    animation: slide 9s infinite 3s;
+}
+
+.slider img:nth-child(3) {
+    animation: slide 9s infinite 6s;
+}
+
+/* Add additional CSS styling as needed */
